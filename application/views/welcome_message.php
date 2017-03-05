@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		color: #444;
 		background-color: transparent;
 		/*border-bottom: 1px solid #D0D0D0;*/
-		font-size: 19px;
+		font-size: 2em;
 		font-weight: normal;
 		margin: 0 0 14px 0;
 		padding: 14px 15px 10px 15px;
@@ -64,6 +64,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		border: 1px solid #D0D0D0;
 		box-shadow: 0 0 8px #D0D0D0;
 	}
+
+	.item-list-wrapper {
+		margin-bottom: 1em;
+		list-style: none;
+	}
+
+	.item-list {
+    	font-size: 1.3em;
+		text-decoration: none;
+	}
 	</style>
 </head>
 <body>
@@ -73,11 +83,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1 class="header-customized">Welcome to MonitorApp!</h1>
 	<div class="list-container">
 		<ul class="list">
-			<li>
+			<li class="item-list-wrapper">
 				<a href="index.php/monitores/list_monitores/" class="item-list"> Administrar Monitores </a>
 			</li>
 
-			<li>
+			<li class="item-list-wrapper">
 				<a href="index.php/monitorias/list_monitorias/" class="item-list"> Administrar Monitorias </a>
 			</li>			
 		</ul>
